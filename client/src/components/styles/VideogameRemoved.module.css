@@ -1,0 +1,9 @@
+.title{
+    background: linear-gradient(70deg, black, rgb(107, 5, 90));
+   
+    padding: 20%;    
+
+    color: white;
+    max-height: 100vh;
+    overflow: hidden;
+}

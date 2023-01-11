@@ -1,0 +1,14 @@
+.GameDetail{
+    background: linear-gradient(500deg, black, rgb(49, 1, 40));
+    color: white;
+    
+}
+
+.description {
+    margin: 30px;
+}
+
+.image{
+    max-width: 50%;
+    box-shadow: 0 0 40px brown;
+}

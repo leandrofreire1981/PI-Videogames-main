@@ -1,0 +1,15 @@
+.Nav {
+    background: linear-gradient(70deg, black, rgb(107, 5, 90));
+    display: flex;
+    width: 100%;
+    height: 35px;
+    padding: 0 50px;
+    gap: 30px;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+.Link {
+    color: beige;
+    text-decoration: none;
+}

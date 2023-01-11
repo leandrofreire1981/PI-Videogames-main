@@ -1,0 +1,22 @@
+.RenderPages {
+    background: linear-gradient(70deg, black, rgb(107, 5, 90));
+    max-width: 100%;
+ 
+
+
+
+    
+}
+
+
+
+.Pages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+
+

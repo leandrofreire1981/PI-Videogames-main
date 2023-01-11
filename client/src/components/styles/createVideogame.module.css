@@ -1,0 +1,67 @@
+.create{
+    background: linear-gradient(70deg, black, rgb(107, 5, 90));
+    color: white;
+
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+    height: 10px;
+    gap:10px
+}
+
+.label{
+    padding-top: 5px;
+}
+
+.genres{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    
+    margin-left: 25%;
+    margin-bottom: 25px;
+    
+   
+    width: 50%;
+    gap: 40px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    
+}
+
+.button {
+    top: 50%;
+    left: 50%;
+    height: 40px;
+    width: 80px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+    background-color: black;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: 500ms; 
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+.error{
+    color: red;
+
+}

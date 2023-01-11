@@ -1,0 +1,41 @@
+.landing{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.video{
+    
+    min-width: 100%;
+    top: 50%;
+    left: 50%;
+
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 40px;
+    width: 80px;
+    background-color: black;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: 500ms; 
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
