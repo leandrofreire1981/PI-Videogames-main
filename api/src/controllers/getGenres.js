@@ -20,7 +20,7 @@ const getGenres = async () => {
     //let gen = await axios.get('http://localhost:3003/genres')
     //gen = gen.data.map((res) => {return res.name})
 
-   Promise.all(gen.map(res => Genre.create({'name': res})))
+   await Promise.all(gen.map(res => Genre.create({'name': res})))
 
     return gen
 
