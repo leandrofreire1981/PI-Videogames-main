@@ -42,5 +42,5 @@
       "last 1 safari version"
     ]
   },
-  "engines": { "node" : ">=15 <17" }
+  "engines": { "node" : ">=14 <17" }
 }
