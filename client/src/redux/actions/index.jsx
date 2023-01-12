@@ -6,7 +6,7 @@ export function getVideogames(){
     return async function(dispatch){
 
         //let videogames = await axios.get('http://localhost:3001/videogames')
-        let videogames = await axios.get('https://pi-videogames-production-cad2.up.railway.app/videogames')
+        let videogames = await axios.get('https://pi-videogames.up.railway.app/videogames')
         videogames = [...videogames.data]
         dispatch({
             type: GET_VIDEOGAMES,
@@ -20,7 +20,7 @@ export function getGenres(){
 
     return function(dispatch){
         //fetch('http://localhost:3001/genres')
-        fetch('https://pi-videogames-production-cad2.up.railway.app/genres')
+        fetch('https://pi-videogames.up.railway.app/genres')
             .then(res => res.json())
             .then(res => {
                 dispatch({
@@ -36,7 +36,7 @@ export function getVideogamesByName(name, gamesFindedDb){
     
     return function(dispatch){
         //fetch(`http://localhost:3001/videogames?name=${name}`)
-        fetch(`https://pi-videogames-production-cad2.up.railway.app/videogames?name=${name}`)
+        fetch(`https://pi-videogames.up.railway.app/videogames?name=${name}`)
             .then(res => res.json())
             .then(res => {
                 dispatch({
@@ -52,7 +52,7 @@ export function getVideogameById(id){
 
     return function(dispatch){
         //fetch(`http://localhost:3001/videogames/${id}`)
-        fetch(`https://pi-videogames-production-cad2.up.railway.app/videogames/${id}`)
+        fetch(`https://pi-videogames.up.railway.app/videogames/${id}`)
             .then(res => res.json())
             .then(res => {
                 console.log('actions: ', res)
@@ -69,7 +69,7 @@ export function getPlatforms(){
 
     return function(dispatch){
         //fetch('http://localhost:3001/platforms')
-        fetch('https://pi-videogames-production-cad2.up.railway.app/platforms')
+        fetch('https://pi-videogames.up.railway.app/platforms')
             .then(res => res.json())
             .then(res => {
                 dispatch({
@@ -84,7 +84,7 @@ export function getPlatforms(){
 export function postVideogame(game){
 
     //fetch(`http://localhost:3001/post`, {
-    fetch(`https://pi-videogames-production-cad2.up.railway.app/post`, {
+    fetch(`https://pi-videogames.up.railway.app/post`, {
         method: 'POST',
         body: JSON.stringify(game),
         headers: {
@@ -101,7 +101,7 @@ export function postVideogame(game){
 export function deleteVideogame(id, history){
 
     //fetch(`http://localhost:3001/delete/${id}`)
-    fetch(`https://pi-videogames-production-cad2.up.railway.app/delete/${id}`)
+    fetch(`https://pi-videogames.up.railway.app/delete/${id}`)
         .then(res => res.json())
         .then(res => {
             console.log('actions ', res)
