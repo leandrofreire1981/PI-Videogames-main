@@ -7,14 +7,15 @@ const { apiKey } = process.env;
 
 const getGenres = async () => {
 
-    let genresDb = await Genre.findAll()
+     let genresDb = await Genre.findAll()
     if(genresDb.length > 0)
-        return genresDb.map(res => res.name)
+        return genresDb.map(res => res.name) 
 
     //api videogames
     const genres = await axios.get(`https://api.rawg.io/api/genres?key=${apiKey}`)
-    let gen = genres.data.results.map(res => res)
-    gen = gen.data.map((res) => res.name)
+    console.log('genres: ', genres.data.results[0].name)
+    let gen = genres.data.results.map(res => res.name)
+    
     
     //apilocal
     //let gen = await axios.get('http://localhost:3003/genres')
