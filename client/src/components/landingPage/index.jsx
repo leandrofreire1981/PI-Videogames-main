@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import style from '../styles/LandingPage.module.css'
-import letras from '../../img/fondo.png'
-import fondo from '../../img/imagen1.jpg'
+import letras from '../../img/imagen3.jpg'
+
 
 export default function LandingPage(){
     const handleClick = ()=>{
